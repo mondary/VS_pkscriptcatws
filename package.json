@@ -1,0 +1,59 @@
+{
+  "name": "vs-pkscriptcatws",
+  "displayName": "VS_pkscriptcatws",
+  "description": "VS_pkscriptcatws - Sync userscripts to ScriptCat browser extension",
+  "version": "0.1.1",
+  "publisher": "mondary",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "icon": "icon.png",
+  "activationEvents": [
+    "workspaceContains:**/*.user.js"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "scriptcat-sync.start",
+        "title": "ScriptCat: Start Server"
+      },
+      {
+        "command": "scriptcat-sync.stop",
+        "title": "ScriptCat: Stop Server"
+      },
+      {
+        "command": "scriptcat-sync.push",
+        "title": "ScriptCat: Push Current Script"
+      }
+    ],
+    "configuration": {
+      "title": "ScriptCat Sync",
+      "properties": {
+        "scriptcat-sync.port": {
+          "type": "number",
+          "default": 8642,
+          "description": "WebSocket port for ScriptCat connection"
+        },
+        "scriptcat-sync.autoConnect": {
+          "type": "boolean",
+          "default": true,
+          "description": "Auto-start server when opening a workspace with userscripts"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "ws": "^8.19.0"
+  }
+}
