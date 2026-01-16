@@ -15,6 +15,13 @@ Extension VS Code pour synchroniser vos userscripts (`.user.js`) directement ave
 2. Assurez-vous d'avoir l'extension **ScriptCat** installée dans votre navigateur.
 3. Configurez ScriptCat pour se connecter au serveur WebSocket (port par défaut : `8642`).
 
+## Assets
+
+Les logos carrés pour le Marketplace sont générés dans `release/` :
+- `release/logo-128.png`
+- `release/logo-256.png`
+- `release/logo-512.png`
+
 ## Commandes
 
 | Commande | Description |

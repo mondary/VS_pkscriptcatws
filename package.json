@@ -2,8 +2,8 @@
   "name": "vs-pkscriptcatws",
   "displayName": "VS_pkscriptcatws",
   "description": "VS_pkscriptcatws - Sync userscripts to ScriptCat browser extension",
-  "version": "0.1.1",
-  "publisher": "mondary",
+  "version": "0.1.2",
+  "publisher": "Cmondary",
   "engines": {
     "vscode": "^1.70.0"
   },

@@ -15,6 +15,9 @@ Provide a minimal VS Code extension that syncs `.user.js` userscripts to the Scr
 - Keep dependencies light; avoid scaffolding generated folders
 - Use straightforward imperative JS; no framework patterns
 
+### Assets
+- Marketplace logos are generated as square PNGs in `release/` (128, 256, 512)
+
 ### Architecture Patterns
 - Single activation entry (`activate`) with command registration
 - Stateless helpers where possible; WebSocket stored as module-level singleton
